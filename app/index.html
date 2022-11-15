@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <link rel="stylesheet" href="css/styleMain.css">
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="PageP">
+        <div class="ScrollPage">
+            <header class="topo">
+                <div class="ADD">
+                    <div class="Page">
+                        <img src="imgs/slide1.PNG" class="slide">
+                    </div>
+                    <div class="Page">
+                        <img src="imgs/slide2.PNG" class="slide">
+                        <!--Link do youtube para o add em video-->
+                        <a href="#" class="LinkVideo"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                    <div class="Page">
+                        <img src="imgs/slide3.PNG" class="slide">
+                    </div>
+                    <div class="Page">
+                        <img src="imgs/slide4.PNG" class="slide">
+                    </div>
+                    <div class="Page">
+                        <img src="imgs/slide5.PNG" class="slide">
+                    </div>
+                </div>
+            </header>
+            <main class="meio">
+                <div class="ScrollItens">
+                    <div class="ScrollItensSpace">
+                        <div class="CardItem">
+                            <i class="fa-solid fa-house Tag"></i>
+                        </div>
+                        <div class="CardItem">
+                            <i class="fa-solid fa-house Tag"></i>
+                        </div>
+                        <div class="CardItem">
+                            <i class="fa-solid fa-house Tag"></i>
+                        </div>
+                        <div class="CardItem">
+                            <i class="fa-solid fa-house Tag"></i>
+                        </div>
+                        <div class="CardItem">
+                            <i class="fa-solid fa-house Tag"></i>
+                        </div>
+                    </div>
+                    <div class="blurTop"></div>
+                </div>
+                <div class="ScrollProducts">
+                    <div class="ScrollProductsSpace">
+                        <div class="CardProduct" onclick="red('Product.html')">
+                            <img src="#" class="ImgCard">
+                            <div class="DadosCard">
+                                <label class="NameCard">Nome</label>
+                                <h5 class="PriceCard">R$000.000,00</h5>
+                            </div>
+                        </div>
+                        <div class="CardProduct" onclick="red('Product.html')">
+                            <img src="#" class="ImgCard">
+                            <div class="DadosCard">
+                                <label class="NameCard">Nome</label>
+                                <h5 class="PriceCard">R$000.000,00</h5>
+                            </div>
+                        </div>
+                        <div class="Pages">
+                            <a href="#" class="PagBtn"><</a>
+                            <div class="PagAtual">01</div>
+                            <a href="#" class="PagBtn">></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="pe">
+        <a href="index.html" class="BtnsFooter"><i class="fa-solid fa-house"></i></a>
+        <a href="login.html" class="BtnsFooter"><i class="fa-solid fa-user"></i></a>
+        <a href="search.html" class="BtnsFooter"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </footer>
+</body>
+<!--<script>
+    var http = new XMLHttpRequest();
+
+    var url_ = "https://buchen.profrodolfo.com.br/PageHome.php"; // página de onde virá a div
+    http.open("GET", url_, true);
+    http.onreadystatechange = function(){
+       if(http.readyState == 4){
+          var html = http.responseText;
+          // converte o retorno em elementos HTML
+          html = new DOMParser().parseFromString(html, "text/html");
+          document.getElementById('mos').innerHTML = html.getElementById('card').innerHTML.trim();
+       }
+    }
+    http.send(null);
+</script>
+Não sei o que isso faz mas como não vou usar por enquanto deixei como coments
+-->
+</html>

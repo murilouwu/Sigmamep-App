@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="Login.js">
+  <link rel="stylesheet" href="css/styleLogin.css">
+  <script src="java.js"></script>
+  <script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="BackBtn" onclick="red('index.html')"><i class="fa-solid fa-arrow-left"></i></button>
+    <div class="logo" onclick="red('perfil.html')">Pular login</div>
+    <button class="btnCad" onclick="ocultar('#CadFormOpen', 1)">Cadastrar</button>
+    <div class="Form">
+        <form method="post" class="FormV">
+            <h1 class="Title">Entrar</h1>
+            <div class="Input">
+                <i class="fa-solid fa-envelope LogIcon"></i>
+                <input type="email" name="email" class="input" placeholder="email" id="email">
+            </div>
+            <div class="Input">
+                <i class="fa-solid fa-lock LogIcon"></i>
+                <input type="password" name="senha" class="input" placeholder="senha" id="senha" maxlength="25">
+            </div>
+            <input type="submit" value="Entrar" name="LogIn" class="Entrar">
+        </form>
+    </div>
+    <div class="ocultar cadastro" id="CadFormOpen">
+        <i class="fa-solid fa-circle-xmark X" onclick="ocultar('#CadFormOpen', 0)"></i>
+        <form class="cadForm" method="post">
+            <!--Nome-->
+            <div class="Cdinput">
+                <i class="fa-solid fa-user CdIcon"></i>
+                <input type="text" name="nome" placeholder="Nome Completo" class="CdInInput">
+            </div>
+            <!--EMAIL-->
+            <div class="Cdinput">
+                <i class="fa-solid fa-envelope CdIcon"></i>
+                <input type="email" name="email" placeholder="@EMAIL" class="CdInInput">
+            </div>
+            <!--Idade-->
+            <div class="Cdinput">
+                <i class="fa-solid fa-calendar-days CdIcon"></i>
+                <input type="number" name="idade" placeholder="Idade" class="CdInInput" maxlength="3" min="18" max="120">
+            </div>
+            <!--Numero de telefone-->
+            <div class="Cdinput">
+                <i class="fa-solid fa-phone CdIcon"></i>
+                <input type="tel" name="telefone" placeholder="Tel(DD_0000-0000)" class="CdInInput" pattern="[0-9]{2}_[0-9]{4}-[0-9]{4}">
+            </div>
+            <!--Senha-->
+            <div class="Cdinput">
+                <i class="fa-solid fa-key CdIcon"></i>
+                <input type="password" name="senha" placeholder="Senha" class="CdInInput" maxlength="25">
+            </div>
+            <!--Confimar senha-->
+            <div class="Cdinput">
+                <i class="fa-solid fa-envelope CdIcon"></i>
+                <input type="password" name="consenha" placeholder="Comfirme a senha" class="CdInInput" maxlength="25">
+            </div>
+            <input type="submit" name="logar" value="cadastrar" class="CadEnv">
+        </form>
+    </div>
+</body>
+</html>

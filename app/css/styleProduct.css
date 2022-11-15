@@ -1,0 +1,241 @@
+ @import "vars.css";
+
+body{
+    background-color: var(--Gray);
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+.PageP{
+    width: 100vw;
+    height: 100vh;
+}
+    .ScrollPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: overlay;
+        overflow-x: hidden;
+    }
+    .Produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+        .Product{
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+            .slideP{
+                display: flex;
+                height: 25vh;
+                width: 100vw;
+            }
+                .ADD{
+                    display: flex;
+                    height: 100%;
+                    flex-direction: row;
+                    align-items: center;
+                    animation: 100s linear infinite alternate slide;
+                }
+                    .Page{
+                        width: 100vw;
+                        height: 100%;
+                    }
+                        .LinkVideo{
+                            display: flex;
+                            position: absolute;
+                            width: 29vw;
+                            height: 8vh;
+                            margin: -17vh 0vw 0vh 56vw;
+                            text-decoration: none;
+                            color: var(--Green);
+                            background-color: var(--Black20);
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 7px;
+                            backdrop-filter: blur(2px);
+                            border: 3px solid;
+                            font-size: 4vh;
+                        }
+                        .slide{
+                            width: 100%;
+                            height: 100%;
+                        }
+            .MarcaDAg{
+                display: flex;
+                width: 100vw;
+                height: 25vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: var(--White);
+                margin-top: -25vh;
+                z-index: 3;
+                background-color: var(--Black20);
+                backdrop-filter: blur(2px);
+                margin-bottom: 3vh;
+            }
+                .NameComplet{
+                    font-size: 4vh;
+                    width: 87vw;
+                    text-align: center;
+                    font-family: 'ComicBook';
+                }
+                .nota{
+                    display: flex;
+                    width: 34vw;
+                    justify-content: space-around;
+                    font-size: 2vh;
+                    color: var(--WhiteGreen);
+                }
+                .Price{
+                    font-size: 3vh;
+                    font-family: 'ComicBook';
+                }
+            .Comprar{
+                display: flex;
+                width: 100vw;
+                height: 16vh;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+                .BtnSell{
+                    width: 100vw;
+                    height: 7vh;
+                    border: none;
+                    background-color: var(--Green);
+                    font-size: 3vh;
+                    font-family: 'ComicBook';
+                    margin-bottom: 2vh;
+                }
+            .Desc{
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--Black);
+                color: var(--White);
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                font-family: 'ComicBook';
+            }
+                .desc{
+                    width: 80%;
+                    height: 41vh;
+                    text-align: center;
+                    word-break: break-word;
+                    overflow-y: overlay;
+                }
+        
+        .comentProductScroll{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            background-color: var(--WhiteBrown);
+            padding-bottom: 11vh;
+        }
+            .comentCard{
+                width: 85%;
+                height: 14vh;
+                background-color: var(--Black);
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: flex-start;
+                margin-top: 3vh;
+                border-radius: 14px;
+                font-family: 'ComicBook';
+                font-size: 2vh;
+            }
+            .TopComentCard{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                height: 19%;
+            }
+                .nickCard{
+                    cursor: default;
+                    color: var(--White);
+                    font-size: 2vh;
+                }
+                .notaComent{
+                    width: 56vw;
+                    display: flex;
+                    height: 3vh;
+                    background-color: var(--Invisible);
+                    justify-content: space-around;
+                    align-items: center;
+                    color: var(--Green);
+                }
+                    .notaComent .NotaOff{
+                        color: var(--Gray);
+                    }             
+            .ToBodyComentCard{
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+                .imgPerfilComent{
+                    width: 14vw;
+                    height: 7vh;
+                    border-radius: 50px;
+                    background-color: coral;
+                }
+                .comentCardInfo{
+                    display: flex;
+                    width: 74%;
+                    height: 80%;
+                    text-align: center;
+                    font-size: 2vh;
+                    font-family: 'ComicBook';
+                    color: var(--Green);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .PerfilComentCom{
+                        height: 100%;
+                        width: 100%;
+                        overflow-y: overlay;
+                        word-break: break-word;
+                    }
+
+.pe{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    background-color: var(--Black50);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    margin-top: 91vh;
+}
+    .BtnsFooter{
+        text-align: center;
+        text-decoration: none;
+        color: var(--Green);
+        font-size: 4vh;
+    }
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200vw);
+    }
+}

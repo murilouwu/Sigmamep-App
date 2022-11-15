@@ -1,0 +1,196 @@
+@import "vars.css";
+
+body{
+	background-color: var(--Gray);
+	overflow-y: overlay;
+	overflow-x: hidden;
+}
+.PageP{
+	width: 100vw;
+	height: 100vh;
+}
+	.ScrollPage{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow-y: overlay;
+		overflow-x: hidden;
+	}
+		.topo{
+			display: flex;
+			width: 100vw;
+			height: 25vh;
+			align-items: center;
+			overflow: hidden;
+		}
+			.ADD{
+				display: flex;
+				height: 100%;
+				flex-direction: row;
+				align-items: center;
+				animation: 100s linear infinite alternate slide;
+			}
+				.Page{
+					width: 100vw;
+					height: 100%;
+				}
+					.LinkVideo{
+						display: flex;
+						position: absolute;
+						width: 29vw;
+						height: 8vh;
+						margin: -19vh 0vw 0vh 48vw;
+						text-decoration: none;
+						color: var(--Green);
+						background-color: var(--Black20);
+						justify-content: center;
+						align-items: center;
+						border-radius: 7px;
+						backdrop-filter: blur(2px);
+						border: 3px solid;
+						font-size: 4vh;
+					}
+					.slide{
+						width: 100%;
+						height: 100%;
+					}
+		.meio{
+			display: flex;
+			width: 100vw;
+			align-items: center;
+			flex-direction: column;
+		}
+			.ScrollItens{
+				padding-top: 3vh;
+				display: flex;
+				height: 15vh;
+				width: 100vw;
+				align-items: center;
+				overflow-x: overlay;
+				background-color: var(--Green);
+				padding-bottom: 2vh;
+			}
+				.ScrollItensSpace{
+					display: flex;
+					height: 100%;
+					flex-direction: row;
+					align-items: center;
+				}
+					.CardItem{
+						width: 29vw;
+						background-color: var(--WhiteBrown);
+						margin-left: 7vw;
+						height: 14vh;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 11px;
+						font-size: 6vh;
+						color: var(--Black);
+						box-shadow: -3px 3px 0px 2px var(--Brown);
+					}
+					.blurTop{
+						position: absolute;
+						width: 83vw;
+						height: 17vh;
+						background: linear-gradient(272deg, var(--WhiteGreen) 0%, rgba(0,212,255,0) 100%);
+						margin-left: 69vw;
+					}
+			.ScrollProducts{
+				display: flex;
+				width: 100%;
+				padding-top: 3vh;
+				flex-direction: column;
+				align-items: center;
+			}
+				.ScrollProductsSpace{
+					display: flex;
+					width: 80%;
+					flex-flow: wrap;
+				}
+					.CardProduct{
+						display: flex;
+						width: 36vw;
+						height: 18vh;
+						margin-left: 4vw;
+						background-color: var(--Black50);
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						border-radius: 5px;
+						margin-bottom: 2vh;
+						box-shadow: 0px 0px 2vw var(--Black50);
+					}
+						.ImgCard{
+							display: flex;
+							height: 60%;
+							width: 80%;
+							background-color: var(--Gray);
+							border-radius: 5px;
+						}
+						.DadosCard{
+							display: flex;
+							color: var(--White);
+							font-size: 2vh;
+							align-items: center;
+							justify-content: space-around;
+							width: 100%;
+							flex-direction: column;
+							font-family: 'ComicBook';
+						}
+					.Pages{
+						display: flex;
+						width: 100%;
+						height: 11vh;
+						flex-direction: row;
+						margin-bottom: 9vh;
+						justify-content: center;
+						align-items: flex-start;
+						margin-top: 2vh;
+					}
+						.PagBtn{
+							text-decoration: none;
+							color: var(--Black);
+							background: var(--Green);
+							border-radius: 10px;
+							width: 27vw;
+							text-align: center;
+							padding: 1vh 0vw;
+							font-family: 'ComicBook';
+							font-size: 5vh;
+						}
+						.PagAtual{
+							width: 26vw;
+							color: var(--White);
+							font-size: 5vh;
+							font-family: 'ComicBook';
+							text-align: center;
+						}
+	.pe{
+		display: flex;
+		width: 100vw;
+		height: 10vh;
+		position: fixed;
+		background-color: var(--Black50);
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		backdrop-filter: blur(3px);
+		z-index: 100;
+		margin-top: 91vh;
+	}
+		.BtnsFooter{
+			text-align: center;
+			text-decoration: none;
+			color: var(--Green);
+			font-size: 4vh;
+		}
+
+@keyframes slide{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(-400vw);
+	}
+}

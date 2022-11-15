@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/styleSearch.css">
+  <script src="java.js"></script>
+  <script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="PageP">
+        <div class="ScrollPage">
+            <form class="pesquisa" method="post">
+                <div class="bars">
+                    <div class="barA">
+                        <i class="fa-solid fa-magnifying-glass ISearch"></i>
+                        <input class="barInputA" type="text" name="nome" placeholder="Pesquisa">
+                        <i class="fa-solid fa-bars IMenu" onclick="dropIcon(this, '#moneySearchBar', 'fa-solid fa-bars IMenu', 'fa-sharp fa-solid fa-circle-xmark IMenu', 0)"></i>
+                    </div>
+                    <div class="barB" id="moneySearchBar">
+                        <i class="fa-solid fa-dollar-sign ISearchB"></i>
+                        <input class="barInputB" type="number" name="min" placeholder="minimo" min="0" step="0.010">
+                        <input class="barInputB" type="number" name="max" placeholder="maximo" max="999999,99" step="0.010">
+                    </div>
+                </div>
+                <div class="checks">
+                    <div class="botons">
+                        <i class="fa-solid fa-computer btnCheck" id="btncheck0" onclick="backColorcheck('btncheck0', 'var(--WhiteBrown)', 'var(--Black)')"></i>
+                        <i class="fa-solid fa-shirt btnCheck" id="btncheck1" onclick="backColorcheck('btncheck1', 'var(--WhiteBrown)', 'var(--Black)')"></i>
+                    </div>
+                    <input class="ocultar" type="checkbox" name="produto">
+                    <input class="ocultar" type="checkbox" name="cosmesticos">
+                </div>
+            </form>
+            <main class="meio">
+                <div class="ScrollProducts">
+                    <div class="ScrollProductsSpace">
+                        <div class="CardProduct" onclick="red('Product.html')">
+                            <img src="#" class="ImgCard">
+                            <div class="DadosCard">
+                                <label class="NameCard">Nome</label>
+                                <h5 class="PriceCard">R$000.000,00</h5>
+                            </div>
+                        </div>
+                        <div class="CardProduct" onclick="red('Product.html')">
+                            <img src="#" class="ImgCard">
+                            <div class="DadosCard">
+                                <label class="NameCard">Nome</label>
+                                <h5 class="PriceCard">R$000.000,00</h5>
+                            </div>
+                        </div>
+                        <div class="Pages">
+                            <a href="#" class="PagBtn"><</a>
+                            <div class="PagAtual">01</div>
+                            <a href="#" class="PagBtn">></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="pe">
+        <a href="index.html" class="BtnsFooter"><i class="fa-solid fa-house"></i></a>
+        <a href="login.html" class="BtnsFooter"><i class="fa-solid fa-user"></i></a>
+        <a href="search.html" class="BtnsFooter"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </footer>
+</body>
+</html>

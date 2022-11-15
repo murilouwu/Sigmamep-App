@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <link rel="stylesheet" href="css/stylePerfil.css">
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
+<script>     
+</script>
+</head>
+<body>
+    <div class="PageP">
+        <div class="ScrollPage">
+            <h1 class="Title">Pedidos</h1>
+            <table class="cinereousTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Status</th>
+                        <th>Comentar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>text</td>
+                        <td>Entrege?</td>
+                        <td><button onclick="ocultar('#formComent', 1)" class="comentCard">Comentar</button></td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Entrege?</td>
+                        <td><button onclick="ocultar('#formComent', 1)" class="comentCard">Comentar</button></td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Entrege?</td>
+                        <td><button onclick="ocultar('#formComent', 1)" class="comentCard">Comentar</button></td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Entrege?</td>
+                        <td><button onclick="ocultar('#formComent', 1)" class="comentCard">Comentar</button></td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Entrege?</td>
+                        <td><button onclick="ocultar('#formComent', 1)" class="comentCard">Comentar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="Pages">
+                <a href="#" class="PagBtn"><</a>
+                <div class="PagAtual">01</div>
+                <a href="#" class="PagBtn">></a>
+            </div>
+        </div>
+    </div>
+    <form class="comentProductBox ocultar" method="post" enctype="multipart/form-data" id="formComent">
+        <i class="fa-solid fa-circle-xmark X2" onclick="ocultar('#formComent', 0)"></i>
+        <div class="avalCaoProd">
+            <i class="fa-solid fa-star starIcon" id="starA" onclick="backColorcheck('starA', 'var(--Green)', 'var(--Invisible)')"></i>
+            <i class="fa-solid fa-star starIcon" id="starB" onclick="backColorcheck('starB', 'var(--Green)', 'var(--Invisible)')"></i>
+            <i class="fa-solid fa-star starIcon" id="starC" onclick="backColorcheck('starC', 'var(--Green)', 'var(--Invisible)')"></i>
+            <i class="fa-solid fa-star starIcon" id="starD" onclick="backColorcheck('starD', 'var(--Green)', 'var(--Invisible)')"></i>
+            <i class="fa-solid fa-star starIcon" id="starE" onclick="backColorcheck('starE', 'var(--Green)', 'var(--Invisible)')"></i>
+        </div>
+        <input type="checkbox" name="starA" class="ocultar">
+        <input type="checkbox" name="starB" class="ocultar">
+        <input type="checkbox" name="starC" class="ocultar">
+        <input type="checkbox" name="starD" class="ocultar">
+        <input type="checkbox" name="starE" class="ocultar">
+        <textarea name="coment" class="ComentProductInput" placeholder="comentario"></textarea>
+        <input type="submit" name="ComentProtuto" class="ComentEnv" value="Avaliar">
+    </form>
+    <footer class="pe">
+        <a href="index.html" class="BtnsFooter"><i class="fa-solid fa-house"></i></a>
+        <a href="perfil.html" class="BtnsFooter"><i class="fa-solid fa-user"></i></a>
+        <a href="search.html" class="BtnsFooter"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </footer>
+</body>
+</html>

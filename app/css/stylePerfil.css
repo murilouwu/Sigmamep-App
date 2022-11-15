@@ -1,0 +1,181 @@
+@import "vars.css";
+body{
+    background-color: var(--Gray);
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+.PageP{
+    width: 100vw;
+    height: 100vh;
+}
+    .ScrollPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: overlay;
+        overflow-x: hidden;
+    }
+    .Title{
+        font-size: 4vh;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+        color: var(--White);
+        font-family: 'ComicBook';
+    }
+    table.cinereousTable {
+      border: none;
+      background-color: var(--WhiteBrown);
+      width: 100%;
+      text-align: center;
+      color: var(--Black);
+      font-family: 'ComicBook';
+      margin-bottom: 2vh;
+    }
+        table.cinereousTable td, table.cinereousTable th {
+          border: 1px solid var(--Black);
+          padding: 2px 2px;
+        }
+            table.cinereousTable tbody td {
+              font-size: 3vh;
+            }
+        table.cinereousTable thead {
+          background: var(--Black);
+        }
+            table.cinereousTable thead th {
+              font-size: 17px;
+              font-weight: bold;
+              color: var(--White);
+              text-align: center;
+              border-left: 1px solid #948473;
+            }
+            table.cinereousTable thead th:first-child {
+              border-left: none;
+            }
+        .comentCard{
+            width: 23vw;
+            background-color: var(--White);
+            border: none;
+            border-radius: 20px;
+            height: 3vh;
+            font-family: 'ComicBook';
+        }
+    .Pages{
+        display: flex;
+        width: 100%;
+        height: 11vh;
+        flex-direction: row;
+        margin-bottom: 9vh;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 3vh;
+    }
+        .PagBtn{
+            text-decoration: none;
+            color: var(--Black);
+            background: var(--Green);
+            border-radius: 10px;
+            width: 27vw;
+            text-align: center;
+            padding: 1vh 0vw;
+            font-family: 'ComicBook';
+            font-size: 5vh;
+        }
+        .PagAtual{
+            width: 26vw;
+            color: var(--White);
+            font-size: 5vh;
+            font-family: 'ComicBook';
+            text-align: center;
+        }
+    .comentProductBox{
+        background-color: var(--WhiteBrown);
+        height: 49vh;
+        flex-direction: column;
+        width: 93vw;
+        padding: 2vh;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 6vw 63vw var(--Black80);
+        animation: 0.5s linear modal;
+        position: absolute;
+    }
+        .X2{
+            position: absolute;
+            color: var(--White);
+            margin: 0vh 71vw 67vh 0vw;
+            font-size: 7vh;
+        }
+        .avalCaoProd{
+            height: 16%;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid var(--WhiteGreen);
+            width: 100vw;
+            font-size: 4vh;
+            background-color: var(--WhiteGreen);
+        }
+            .starIcon{
+                color: var(--Black);
+                background: var(--Invisible);
+                padding: 1vw;
+                border-radius: 50px;
+            }
+        .ComentProductInput{
+            margin-left: 1vw;
+            width: 100%;
+            border: 3px solid var(--Brown);
+            color: var(--Black);
+            padding-bottom: 1vh;
+            text-align: center;
+            height: 21vh;
+            resize: none;
+            word-break: break-word;
+            overflow-y: overlay;
+            font-family: 'ComicBook';
+            border-radius: 7px;
+            background-color: var(--Invisible);
+            margin-bottom: 2vh;
+            font-size: 3vh;
+        }
+            .ComentProductInput:focus{
+                background-color: var(--Black);
+                border-width: 3px;
+                border-color: var(--Green);
+                color: var(--Green);
+            }
+            .ComentProductInput::placeholder{
+                color: var(--Black);
+            }
+        .ComentEnv{
+            height: 17%;
+            width: 94%;
+            border-radius: 30px;
+            background-color: var(--WhiteGreen);
+            border: none;
+            font-size: 3vh;
+            font-weight: bolder;
+            font-family: 'ComicBook';
+            color: var(--Black);
+        }
+.pe{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    background-color: var(--Black50);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    margin-top: 91vh;
+}
+    .BtnsFooter{
+        text-align: center;
+        text-decoration: none;
+        color: var(--Green);
+        font-size: 4vh;
+    }
