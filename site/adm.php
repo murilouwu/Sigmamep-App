@@ -42,6 +42,14 @@
 		 				<i class="icon fa-solid fa-delete-left"></i>
 		 				<label class="itCd-name">Deletar Categoria De Produto</label>
 		 			</div>
+					<div class="itCard">
+		 				<i class="icon fa-solid fa-delete-left"></i>
+		 				<label class="itCd-name">Adicionar Propaganda</label>
+		 			</div>
+					<div class="itCard">
+		 				<i class="icon fa-solid fa-delete-left"></i>
+		 				<label class="itCd-name">Deletar Propaganda</label>
+		 			</div>
 		 			<div class="itCard">
 		 				<i class="icon fa-solid fa-crown"></i>
 		 				<label class="itCd-name">Tornar user ADM</label>
