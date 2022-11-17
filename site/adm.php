@@ -1,3 +1,9 @@
+<?php
+    include('conect.php');
+    if(!isset($_SESSION['user']['dados']->status) || $_SESSION['user']['dados']->status == null){
+        mover('index.php');
+    }
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,6 +30,7 @@
 	 			<input class="ocultar" type="checkbox" name="produto">
 	 			<input class="ocultar" type="checkbox" name="cosmesticos">
 	 			<input class="ocultar" type="checkbox" name="users">
+	 			<input class="ocultar" type="submit" name="searchEnvP">
 	 		</div>
 	 	</form>
 	 	<div class="centro">
@@ -43,14 +50,14 @@
 		 				<label class="itCd-name">Deletar Categoria De Produto</label>
 		 			</div>
 					<div class="itCard">
-		 				<i class="icon fa-solid fa-delete-left"></i>
+		 				<i class="icon fa-solid fa-rectangle-ad"></i>
 		 				<label class="itCd-name">Adicionar Propaganda</label>
 		 			</div>
 					<div class="itCard">
-		 				<i class="icon fa-solid fa-delete-left"></i>
+		 				<i class="icon fa-solid fa-eraser"></i>
 		 				<label class="itCd-name">Deletar Propaganda</label>
 		 			</div>
-		 			<div class="itCard">
+		 			<div class="itCard" onclick="modal('#mostrarMd', '#modal', 6)">
 		 				<i class="icon fa-solid fa-crown"></i>
 		 				<label class="itCd-name">Tornar user ADM</label>
 		 			</div>
@@ -145,6 +152,12 @@
 				<label class="pontospag">...</label>
 				<button class="pagbutton">56</button>
 			</div>
+		</div>
+		<div class="modal ocultar" id="mostrarMd">
+		    <i class="fa-solid fa-circle-xmark X2" onclick="mostrar(['#mostrarMd'], 1)"></i>
+		    <div class="cardmodal" id="modal">
+		        
+		    </div>
 		</div>
 	 	<script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
 	 	<script src="java/java.js"></script>
